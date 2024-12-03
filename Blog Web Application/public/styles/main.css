@@ -1,0 +1,17 @@
+#postContent {
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+}
+
+#postHeading {
+    width: 400px;
+    height: 30px;
+    margin: 10px;
+}
+
+#createPostButton {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}

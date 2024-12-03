@@ -1,0 +1,189 @@
+/* Desktop */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* https://colorhunt.co/palette/c4dfdfd2e9e9e3f4f4f8f6f4 */
+#card {
+    max-height: 450px;
+    max-width: 350px;
+    position: relative;
+    margin: 0;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #e1dbdbb2);
+    padding-bottom: 10px;
+}
+
+#sorry {
+    display: none;
+}
+
+.profile-pic {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    position: relative;
+    border: black 2px outset;
+  
+    top: 25px;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+    background: linear-gradient(to bottom right, #FFCC00, #D40511);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#designation {
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background: linear-gradient(to bottom right, #363030, #000000b2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.company-name {
+    height: 30px;
+    width: 130px;
+    margin: 15px;
+}
+
+.main-detail {
+    display: flex;
+    flex-direction: column;
+     
+    align-items: center;
+}
+
+body {
+    background: linear-gradient(135deg, #FFCC00, #D40511);
+    /* You can adjust the angle (135deg) and colors (#3498db, #8e44ad) to your preference */
+    /* width: 100%; */ 
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.footer-content {
+    text-align: center;
+    margin-top: auto;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.footer-link {
+    color: white;
+}
+
+.connect-button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px; /* Adjust font size as needed */
+    color: #fff; /* Text color */
+    background: linear-gradient(135deg, #FFCC00, #D40511); /* Button background color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    min-width: 330px;
+    display: flex; 
+    gap: 4px;
+    justify-content: center;
+
+}
+
+.connect-button:hover {
+  background: #FFCC00; /* Change background color on hover */
+}
+/* Mobile  */
+
+@media (min-width:319px) and (max-width: 480px) {
+    #sorry {
+        display: none;
+    }
+    #card {
+        min-width: 350px;
+        min-height: 440px;
+    }
+
+    #designation {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .connect-button{
+        min-width: 330px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        display: flex; 
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .footer-content {
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width:319px) {
+    #card {
+        display: none;
+        
+    }
+
+    .footer-content {
+        font-size: 0.7em;
+    }
+
+   #sorry {
+    display: block;
+    color: white;
+    font-size: 50px;
+    
+   }
+    
+}
+/* Tablet */
